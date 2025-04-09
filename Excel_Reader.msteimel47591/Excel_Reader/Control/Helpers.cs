@@ -9,7 +9,6 @@ internal static class Helpers
         Logger("Getting file path...", ConsoleColor.Green);
 
         string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
-        string currentDir = Directory.GetCurrentDirectory();
         string solutionPath = Directory.GetParent(baseDirectory).Parent.Parent.Parent.Parent.FullName;
 
         return solutionPath;
